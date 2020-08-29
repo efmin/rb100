@@ -5,5 +5,5 @@ family = {  uncles: ["bob", "joe", "steve"],
           }
 
 immediate = family.select { |k, v| k == :sisters || k == :brothers }
-
-p names = immediate.values.flatten
+names_array = immediate.values.flatten 
+p names_array
