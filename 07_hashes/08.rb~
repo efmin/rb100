@@ -52,21 +52,15 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
 #
 
 #def anagrams(words)  
-
-  result = { "" => [] }
+  result = {}
   words.each do |word|
     sorted_word = word.split('').sort.join
  
     if result.has_key?(sorted_word)
        result[sorted_word] <<  word
     else
-      result[sorted_word] = [word]
+      result[sorted_word] = word
     end
+   p result
   end
-  
-  result.each_value { |v| p v  }
-
-#end
-  #
-  #
-  # NOTE: The empty string and array key-value pair has been intentionally left on the code for review purposes. 
+#end 
