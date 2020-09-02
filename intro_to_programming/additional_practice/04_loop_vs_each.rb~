@@ -1,4 +1,4 @@
-# Calculating the Factorial of N using Iterative loops:
+# Calculating the Factorial of N using recursion:
 #
 # Factorial of n is the result of multiplying numbers 1 to n: 5! is equal to 5*4*3*2*1 = 120
 # 

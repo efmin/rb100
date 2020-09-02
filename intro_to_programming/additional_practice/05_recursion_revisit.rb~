@@ -1,0 +1,36 @@
+# Calculating the same factorial N from previous iterative methods but now I will use recursion.
+#
+# 5! = 1 * 2 * 3 * 4 * 5
+#
+def factorial(number)
+  # base case is number reaching 1 (counting down from number var)
+  fact = 1
+  if number > 1
+    fact = fact * number
+    number -= 1
+    p "about to call self"
+    factorial(number)
+  else
+    p "inside else"
+    return fact
+  end
+end 
+
+# factorial(5)
+
+# Note: The above method is calling itself but something is wrong with my logic inside of my if statement. I think the issue is that when I make the recursive call, the fact = 1 variable initialization line is run again, resetting my value back to 1. 
+#
+# Re-writing:
+#
+def factorial_two(number)
+  fact = 1
+  if number > 1
+    p "number before n-1 is #{number}"
+    fact = fact * number
+    number -= 1
+    p "fact before rec call is #{fact}"
+    factorial_two(number)
+  end
+  p "returning"
+end
+p factorial_two(5)
