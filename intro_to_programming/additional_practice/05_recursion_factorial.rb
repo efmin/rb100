@@ -12,6 +12,6 @@ def factorial(number)
 end 
 
 p factorial(5)
-p factorial(12)
-p factorial(20)
+p factorial(6)
+p factorial(7)
 p factorial(1)
