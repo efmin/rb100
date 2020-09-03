@@ -3,16 +3,15 @@
 # 5! = 1 * 2 * 3 * 4 * 5
 #
 def factorial(number)
-  # base case is number reaching 1 (counting down from number var)
-  # exception is if number <= 1
   if number == 0
-    p "this is returned if n == 0"
+    p "i am inside number == 0 condition"
     return 1
-  # I don't understand why the method doesn't return 1 if return 1 is the last evaluated line?
   else 
-    p "number before * op is #{number}"
     number * factorial(number-1)
   end
 end 
 
 p factorial(5)
+p factorial(12)
+p factorial(20)
+p factorial(1)
